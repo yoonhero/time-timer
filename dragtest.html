@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>drag</title>
+  <link href="https://adminlte.io/themes/v3/dist/css/adminlte.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"/>
+<style>
+  body {
+  margin: 0;
+}
+
+.container {
+  background-color: #333;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.draggable {
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid black;
+  cursor: move;
+}
+
+.draggable.dragging {
+  opacity: .5;
+}
+
+</style>
+</head>
+<body>
+
+<div class="row main-div">
+  <div class="col-md-2 category-swap">
+    <div class="card">
+      <div class=" card-header">
+        <h5 class="card-title">Cat 1</h5>
+      </div>
+      <ul class="todo-list" data-widget="todo-list">
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+        <li>Task 4</li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-2 category-swap">
+    <div class="card">
+      <div class=" card-header">
+        <h5 class="card-title">Cat 2</h5>
+      </div>
+      <ul class="todo-list" data-widget="todo-list">
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+        <li>Task 4</li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-2 category-swap">
+    <div class="card">
+      <div class=" card-header">
+        <h5 class="card-title">Cat 3</h5>
+      </div>
+      <ul class="todo-list" data-widget="todo-list">
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+        <li>Task 4</li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-2 category-swap">
+    <div class="card">
+      <div class=" card-header">
+        <h5 class="card-title">Cat 4</h5>
+      </div>
+      <ul class="todo-list" data-widget="todo-list">
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+        <li>Task 4</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="xxx">
+	<span style="background-color: red;">1</span>
+	<span style="background-color: orange;">2</span>
+	<span style="background-color: gold;">3</span>
+	<span style="background-color: green;">4</span>
+	<span style="background-color: blue;">5</span>
+	<span style="background-color: indigo;">6</span>
+	<span style="background-color: violet;">7</span>
+	<span style="background-color: brown;">8</span>
+	<span style="background-color: cyan;">9</span>
+	<span style="background-color: magenta;">10</span>
+	<span style="background-color: navy;">11</span>
+	<span style="background-color: maroon;">12</span>
+	<span style="background-color: purple;">13</span>
+	<span style="background-color: pink;">14</span>
+	<span style="background-color: lime;">15</span>
+	<span style="background-color: lightblue;">16</span>
+	<span style="background-color: black;">17</span>
+	<span style="background-color: gray;">18</span>
+	<span style="background-color: tan;">19</span>
+	<span style="background-color: yellowgreen;">20</span>
+</div>
+
+<div class="container">
+  <p class="draggable" draggable="true">1</p>
+  <p class="draggable" draggable="true">2</p>
+</div>
+<div class="container">
+  <p class="draggable" draggable="true">3</p>
+  <p class="draggable" draggable="true">4</p>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/draggable.bundle.js"></script>
+<script src="./js/drag.js"></script>
+</body>
+</html>

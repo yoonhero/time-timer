@@ -1,0 +1,44 @@
+.nav {
+  z-index: 1;
+  position: fixed;
+  top: 50px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #e4e9ed; */
+  padding: 10px 20px 10px 20px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  border-radius: 5px;
+  align-items: center;
+  /* justify-content: center; */
+  /* background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%); */
+  /* background: rgba(255, 255, 255, 0.5); */
+  /* background-color: #faf7ea; */
+  background-color: #e3dedc;
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    left: initial;
+    top: initial;
+    bottom: 0px;
+    width: 100%;
+  }
+}
+
+.nav a {
+  text-decoration: none;
+  /* color: #0008fc; */
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 600;
+  padding: 0;
+  /* margin: 10px; */
+}
+
+.nav a:not(:last-child) {
+  margin-bottom: 20px;
+}

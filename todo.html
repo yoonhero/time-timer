@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="naver-site-verification" content="7f06f422638cdfdfe9423144566b29b4cec4abd9" />
+    <meta name="google-site-verification" content="bDHDfGJqVHKGkYnuyE8-TazZt7Qa2ml1JiyLYfQDhTo" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="공부타이머 - 할일">
+    <meta property="og:description" content="이 사이트는 심플하고 예쁜 타이머 웹사이트로 공부를 도와줄 수 있는 공부 타임타이머(뽀모도로타이머) 사이트입니다.">
+    <meta property="og:url" content="https://time-timer.netlify.app/index.html">
+    <meta name="description" content="이 사이트는 심플하고 예쁜 타이머 웹사이트로 공부를 도와줄 수 있는 공부 타임타이머(뽀모도로타이머) 사이트입니다.">
+    <meta name="keywords" content="공부타이머,공부 타이머,뽀모도로타이머,공부시간어플,구글타이머,공부타이머앱,공부타이머프로그램,공부타이머pc,스터디타이머,공부시계,공부스톱워치,타임타이머,공부용타이머추천, 공부타이머앱추천,업무용시계, 집중력시계,공부, 공부시계웹사이트, 공부웹사이트, 공부타이머웹사이트,공부타이머비교,애플워치공부타이머">
+    <meta name="twitter:card" content="공부를 도와줄 수 있는 타이머입니다.">
+<meta name="twitter:title" content="공부타이머 - 할일">
+<meta name="twitter:description" content="이 사이트는 심플하고 예쁜 타이머 웹사이트로 공부를 도와줄 수 있는 공부 타임타이머(뽀모도로타이머) 사이트입니다.">
+<meta name="twitter:image" content="https://www.urbanbrush.net/web/wp-content/uploads/edd/2021/02/urbanbrush-20210203212519588818.jpg">
+<meta property="og:image" content="https://www.urbanbrush.net/web/wp-content/uploads/edd/2021/02/urbanbrush-20210203212519588818.jpg">
+<meta name="twitter:domain" content="https://time-timer.netlify.app/">
+    <title>타임타이머 공부 웹사이트 - 할일</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/todo.css">
+    <link rel="stylesheet" href="./css/popup.css">
+    <link rel="stylesheet" href="./css/input.css">
+    <link rel="stylesheet" href="./css/countdown.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    
+    <!-- <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" href="./favicon.ico" type="image/x-icon"> -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <link rel="stylesheet" href="./css/todoModal.css">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-startup-image" href="./images/192x192.png">
+<meta name="mobile-web-app-capable" content="yes">
+    <script type="module">
+      import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+      const el = document.createElement('pwa-update');
+      document.body.appendChild(el);
+   </script>
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="./index.html">clock</a>
+        <a href="./stopwatch.html">stopwatch</a>
+        <a href="./time-timer.html">time-timer</a>
+        <a href="./analysis.html">공부분석</a>
+    </div>
+
+    <div class="bac hidden">
+      <div id="clock">
+        <p class="time"></p>
+      </div>
+    </div>
+
+
+
+    <div class="container" style="margin-top: 2rem;">
+      <div class="dashboard">
+        <div class="dashboardBtn" onclick="yesterdaytodo()">
+          <i class="fa fa-chevron-left"></i>
+        </div>
+        <div class="dashboardDate">
+          <span class="dashboardYear">2021년</span>
+          <span class="dashboardMonth">6월</span>
+          <span class="dashboardDay">11일</span>
+        </div>
+        <div class="dashboardBtn" onclick="tomorrowtodo()">
+          <i class="fa fa-chevron-right""></i>
+        </div>
+      </div>
+        <!-- <button type="button" class="btn btn-outline-dark" id="timebtn" onClick="timeSettingShow()" style="width:100px;" data-aos="fade-down">시간설정하기</button>
+        <input type="time" id="time" name="time" min="00:00" max="24:00" required> -->
+
+        
+        <ul class="js-toDoList" style="margin-bottom: 20rem;margin-top: 3rem;" data-aos="fade-up" id="todoList">
+          
+        </ul>
+        <!-- <div class="deleteToDoContainer">
+          <p class="draggable" draggable="true">3</p>
+  <p class="draggable" draggable="true">4</p>
+        </div> -->
+
+    </div>
+    <div class="floatingBtnContainer">
+      <div class="floatingBtn" onclick="showModal()">
+        
+        <div class="floatingBtnPlus"><i class="fa fa-plus" ></i></div>
+        <span>추가</span>
+      </button>
+    </div>
+    </div>
+    <div class="modal hidden">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__content">
+            <!--<h6>들켰당!! [o] </h6>-->
+            <!-- <h1>Times Up</h1>
+            <h4><span id='time_Text'>05:00</span><br><span id='todo_Text'>이빨닦기</span></h4>
+            <button>❌</button> -->
+            <form class="js-toDoForm youngmin" data-aos="fade-down">
+              <input type="text" placeholder="할일을 적어주세요..." />
+              <!-- <input type="range" min="-100" max="0" value="0" class="range blue"/> -->
+              <button type="submit" class="toDoSubmitBtn">
+                <i class="fa fa-check"></i> </button>
+            
+          </form>
+          <div class="timersContainer" >
+            <div class="timers" onclick="timerstart(10*60)">
+              
+              <span class="timersText">10분</span>
+  
+            </div>
+            <div class="timers" onclick="timerstart(20*60)">
+              
+              <span class="timersText">20분</span>
+  
+            </div>
+            <div class="timers" onclick="timerstart(1800)">
+              
+              <span class="timersText">30분</span>
+  
+            </div>
+            <div class="timers" onclick="timerstart(2400)">
+              
+              <span class="timersText">40분</span>
+  
+            </div>
+            <div class="timers" onclick="timerstart(3000)">
+              
+              <span class="timersText">50분</span>
+  
+            </div>
+            <div class="timers" onclick="timerstart(3600)">
+              
+              <span class="timersText">60분</span>
+  
+            </div>
+  
+          </div>
+        </div>
+
+    </div>
+
+    <!-- <div class="dark_btns" style="right:26px" data-aos="fade-left">
+        <button type="button" class="btn-outline-dark" id="darkmode" onClick="dark()"><i class="fas fa-moon"></i></button>
+    </div> -->
+    <!-- <a class="gouptopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a> -->
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/draggable.bundle.js"></script>
+    <script src="./js/todo.js"></script>
+    <script type="text/javascript" src="./js/darkmode.js"></script>
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <!-- <script src="./js/timePopup.js"></script> -->
+    <script src="./js/aos.js"></script>
+    <script src="./js/timers.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script type="text/javascript">
+        if (!wcs_add) var wcs_add = {};
+        wcs_add["wa"] = "6e0a6669dbe1b8";
+        if (window.wcs) {
+            wcs_do();
+        }
+    </script>
+
+</body>
+
+
+</html>

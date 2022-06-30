@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap");
+
+input {
+  background: none;
+  appearance: none;
+  border: 0;
+  font-size: 22px;
+  /* color: #5c97bf; */
+  color: rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  margin-top: 1em;
+}
+
+input::placeholder {
+  /* color: #5c97bf; */
+  color: rgba(0, 0, 0, 0.5);
+}
+
+input:focus,
+input:active {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  width: 100%;
+  max-width: 400px;
+  min-width: 300px;
+}
+
+.list {
+  margin-bottom: 20px;
+}
+
+li {
+  margin-top: 0.3rem;
+  /* color: #1e8bc3; */
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.toDo {
+  font-size: 22px;
+}
+
+.toDo__button {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+span {
+  /* margin-left: 1rem; */
+  font-size: larger;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  background-color: white;
+  padding: 5px 0px;
+  width: 2rem;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.toDo1 {
+  background-color: #fcd9cf;
+}
+
+.toDo2 {
+  background-color: #dabdf6;
+}
+
+.toDo3 {
+  background-color: #a8defa;
+}
+
+.toDo4 {
+  background-color: #a8fad6;
+}
+
+.toDo5 {
+  background-color: #fff2c6;
+}
+
+.toDoContainer {
+  margin-top: 1rem;
+  padding: 20px;
+  border-radius: 30px;
+
+  font-family: "Hi Melody", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+}
+
+.toDoContainer:hover {
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  /* filter: blur(1px); */
+}
+
+.toDoContainer:hover .todo_delete {
+  display: block;
+}
+
+@keyframes dotanimation {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.6);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+}
+
+.dot1 {
+  background-color: #6eb35e;
+}
+.dot2 {
+  background-color: #ecd03f;
+}
+.dot3 {
+  background-color: #f39c3c;
+}
+.dot4 {
+  background-color: #ea5555;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+
+  -webkit-animation: dotanimation 4s 1s infinite linear alternate;
+  -moz-animation: dotanimation 4s 1s infinite linear alternate;
+  -ms-animation: dotanimation 4s 1s infinite linear alternate;
+  -o-animation: dotanimation 4s 1s infinite linear alternate;
+  animation: dotanimation 4s 1s infinite linear alternate;
+}
+.todo_text {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Hi Melody", cursive;
+}
+.todo_time {
+  font-size: 18px;
+  font-family: "Hi Melody", cursive;
+}
+.todo_delete {
+  /* position: absolute; */
+  /* background-color: #e7f8d8; */
+  background-color: inherit;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: none;
+}
+
+.todo_delete:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.draggable.dragging {
+  opacity: 0.5;
+}
+
+.deletetodocontainer {
+  width: 100%;
+  height: 300px;
+  background-color: red;
+  padding: 400px;
+}
+.toDoSubmitBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #79b1bb;
+  color: white;
+  border-radius: 50%;
+  margin: 20px;
+  width: 40px;
+  height: 30px;
+}
+
+.toDoSubmitBtn i {
+  padding: 0;
+}
+
+.youngmin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.floatingBtn {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #79b1bb;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 300;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.floatingBtn span {
+  margin-left: 10px;
+  color: white;
+}
+
+.floatingBtnContainer {
+  position: fixed;
+  bottom: 1rem;
+}
+
+@media only screen and (max-width: 680px) {
+  .floatingBtnContainer {
+    top: 2rem;
+  }
+  .todo_delete {
+    position: relative;
+    /* background-color: #e7f8d8; */
+    background-color: inherit;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: block;
+  }
+}
+
+.floatingBtnPlus {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  color: #d2d2d2;
+  font-size: 12px;
+}
+
+.dashboard {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 400px;
+  z-index: 2;
+}
+.dashboardBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  background-color: #b3e3f8;
+  color: #85bef9;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.dashboardDate {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 680px) {
+  .dashboard {
+    margin-top: 3rem;
+    position: relative;
+    z-index: 0;
+    left: 0;
+    transform: translate(0);
+  }
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-startup-image" href="./images/192x192.png">
+<meta name="mobile-web-app-capable" content="yes">
+  <script type="module">
+    import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+    const el = document.createElement('pwa-update');
+    document.body.appendChild(el);
+ </script>
+  <title>timer</title>
+
+  <style>
+    html,body {
+    height: 100%;
+}
+body {
+    background: #0f3854;
+    background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
+    background-size: 100%;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+#clock {
+    font-family: 'Share Tech Mono', monospace;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #daf6ff;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);}
+    #clock .time {
+        letter-spacing: 0.05em;
+        font-size: 80px;
+        padding: 5px 0;
+    }
+    #clock .date {
+        letter-spacing: 0.1em;
+        font-size: 24px;
+    }
+    #clock .text {
+        letter-spacing: 0.1em;
+        font-size: 12px;
+        padding: 20px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="clock">
+    <p class="time">00:00</p>
+</div>
+<script type="text/javascript">
+  const time = document.querySelector(".time");
+  let sec = 900;
+  const music = new Audio("./timesup.mp3")
+  setInterval(()=>{
+    if(sec > 0){
+      sec -= 1;
+    time.innerText = `${sec > 60 ? Math.floor(sec / 60) < 10 ? String(Math.floor(sec / 60)) :  "0" + String(Math.floor(sec / 60)): "00"}:${Math.floor(sec % 60) < 10 ? "0" + String(Math.floor(sec % 60)) : String(Math.floor(sec % 60))}`
+    } else{
+      music.play()
+    }
+    
+  },1000);
+</script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="dark light">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="naver-site-verification" content="7f06f422638cdfdfe9423144566b29b4cec4abd9" />
+    <meta name="google-site-verification" content="bDHDfGJqVHKGkYnuyE8-TazZt7Qa2ml1JiyLYfQDhTo" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="공부타이머">
+    <meta property="og:description" content="이 사이트는 심플하고 예쁜 타이머 웹사이트로 공부를 도와줄 수 있는 공부 타임타이머(뽀모도로타이머) 사이트입니다.">
+    <meta property="og:url" content="https://time-timer.netlify.app/index.html">
+    <meta name="description" content="이 사이트는 심플하고 예쁜 타이머 웹사이트로 공부를 도와줄 수 있는 공부 타임타이머(뽀모도로타이머) 사이트입니다.">
+    <meta name="keywords" content="공부타이머,공부 타이머,뽀모도로타이머,공부시간어플,구글타이머,공부타이머앱,공부타이머프로그램,공부타이머pc,스터디타이머,공부시계,공부스톱워치,타임타이머,공부용타이머추천, 공부타이머앱추천,업무용시계, 집중력시계,공부, 공부시계웹사이트, 공부웹사이트, 공부타이머웹사이트,공부타이머비교,애플워치공부타이머">
+    <meta name="twitter:card" content="공부를 도와줄 수 있는 타이머입니다.">
+<meta name="twitter:title" content="공부타이머">
+<meta name="twitter:description" content="이 사이트는 심플하고 예쁜 타이머 웹사이트로 공부를 도와줄 수 있는 공부 타임타이머(뽀모도로타이머) 사이트입니다.">
+<meta name="twitter:image" content="https://www.urbanbrush.net/web/wp-content/uploads/edd/2021/02/urbanbrush-20210203212519588818.jpg">
+<meta property="og:image" content="https://www.urbanbrush.net/web/wp-content/uploads/edd/2021/02/urbanbrush-20210203212519588818.jpg">
+<meta name="twitter:domain" content="https://time-timer.netlify.app/">
+    <title>타임타이머 공부 웹사이트</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/About.css">
+    <link rel="stylesheet" href="./css/clock.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/input.css">
+    <link rel="stylesheet" href="./css/todo.css">
+    <link rel="stylesheet" href="./css/happyNewYear.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <!-- <link rel="stylesheet" href="./css/darkmode.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <!-- <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" href="./favicon.ico" type="image/x-icon"> -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+<link rel="manifest" href="./manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-startup-image" href="./images/192x192.png">
+<meta name="mobile-web-app-capable" content="yes">
+
+<script type="module">
+  import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+  const el = document.createElement('pwa-update');
+  document.body.appendChild(el);
+</script>
+</head>
+<body>
+    <!-- <div class="modal" id="2020" style="z-index:101;">
+        <div class="modal__overlay" style="text-align:center;background:#2e3131;">
+        </div>
+        <div class="loading">
+            <h2>2020</h2>
+            <div class="bar"></div>
+            <h2>2021</h2>
+        </div>
+        <div class="center">
+            <div>
+                <h2>항상 행복한</h2>
+            </div>
+            <div></div>
+            <div>
+                <h2>2021년이 되기를</h2>
+            </div>
+            <div></div>
+        </div>
+
+    </div> -->
+    <div class="modal" id="animateText" style="z-index:100;">
+        <div class="modal__overlay" style="background-color:#2e3131; text-align:center;">
+            <div id="str" style="color:#eeeeee;"></div>
+            <div id="str_author" style="color:#eeeeee;"></div>
+            <button id="exit_animate" class="animeTextCloseBtn"><i class="fa fa-times"></i></button>
+        </div>
+
+    </div>
+    <!-- <div class="modal hidden changeName" style="z-index:100;">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__content">
+            <h2>바꾸고 싶은 이름은?</h2>
+            <form class="js-changeName-form js-form form">
+                <input type="text" placeholder="이름을 입력해주세요." />
+            </form>
+        </div>
+
+    </div> -->
+    <div class="modal welcome_modal hidden">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__content">
+            <h2>Welcome!! 이름이 무엇입니까?</h2>
+            <form class="js-welcome-form js-form form ">
+                <input type="text" placeholder="What is your name?" />
+            </form>
+
+        </div>
+    </div>
+    <div class="modal check_today_modal hidden">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__content">
+            <h2><span>안녕하세요?</span><span class="currentUser"></span><span>님</span></h2>
+            <div class="js-weather weather">
+                <span class="weather__text" style="color: #6c7a89;"></span>
+            </div>
+            <h4><span>오늘은</span><span class="today_date"></span><span>입니다.</span></h4>
+            <h4 style="margin-top: 10px;"><span>오늘 당신의 다짐은</span><span class="newYearPromise"></span></h4>
+            <form class="js-toDoForm">
+                <input type="text" placeholder="다짐을 말해주세요." />
+
+            </form>
+
+            <div class="playsound controls">
+                <div class="welcome controls__btns" style="width:50%; margin-bottom:0; margin-top:-3rem;">
+                    <button onclick="exit()">❌</button>
+
+                </div>
+            </div>
+            <footer style="margin-top: 2rem; color:#6c7a89; margin-bottom:2rem;">Copyright &copy; Yoonhero06</footer>
+
+        </div>
+    </div>
+    <div class="nav">
+
+        <a href="./stopwatch.html">stopwatch</a>
+        <a href="./time-timer.html">time-timer</a>
+        <a href="./todo.html">todo</a>
+        <a href="./analysis.html">공부분석</a>
+    </div>
+    <div class="mainContainer">
+        <div class="title">
+            <span class="text1">Clock</span>
+        </div>
+        <div class="clock" id="Clock">
+            <div class="hour">
+                <div class="hr" id="hr"></div>
+            </div>
+            <div class="min">
+                <div class="mn" id="mn"></div>
+            </div>
+            <div class="sec hidden">
+                <div class="sc" id="sc"></div>
+            </div>
+        </div>
+        <div style="text-align:center;clear:both;margin:20px auto">
+        </div>
+        <!-- <div class="playsound controls">
+            <div class="controls__btns" style="width:50%; margin-bottom:0; margin-top:-3rem;">
+
+                <button id="play" onClick="playAudio()"><i class="fas fa-play"></i></button>
+                <button id="pause" onClick="pauseAudio()"><i class="fas fa-pause"></i></button>
+            </div>
+        </div> -->
+
+        <div class="musicplayer">
+          <div class="left_musicplayer">
+            <img src="https://www.urbanbrush.net/web/wp-content/uploads/edd/2021/02/urbanbrush-20210203212519588818.jpg" alt="빡공이미지"/>
+            <span class="musicTitle">공부음악</span>
+            
+          </div>
+          <div class="left_bottom_musicplayer">
+            <input type="range" step="1" class="seekbar" value="0" min="0" max="100" oninput="handleSeekBar()">
+          </div>
+          <div class="right_musicplayer">
+            <div class="left_top_musicplayer">
+              <button class="previousMusic" onclick="previousMusic()">
+                <i class="fas fa-step-backward"></i>
+              </button>
+              
+              <button class="startMusic " onclick="handlePlay()">
+                <i class="fas fa-play"></i>
+              </button>
+              <button class="nextMusic" onclick="nextPlay()">
+                <i class="fas fa-step-forward"></i>
+              </button>
+            </div>
+            
+          </div>
+        </div>
+        <div class="about__container">
+            <span id="about__quoate">
+                “Freedom is the freedom to say that two plus two make four. If that is
+                granted, all else follows.”
+            </span>
+            <span id="about__author">George Orwell, 1984</span>
+        </div>
+
+        <!-- <div class="ad">
+            <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-pPL7oJ0EVY2isgGA" data-ad-width="320" data-ad-height="100"></ins>
+            <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-QIlfmudQ6W2mmWIp" data-ad-width="320" data-ad-height="50"></ins>
+            <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-MapQH7t1F3VcVfI0" data-ad-width="320" data-ad-height="100"></ins>
+        </div> -->
+        <footer style="margin-top: 2rem; color:#6c7a89; margin-bottom:20rem; ">Copyright &copy; Yoonhero06</footer>
+
+    </div>
+
+    <!-- <div class="dark_btns" style="margin-right: 23px;">
+        <button type="button" class=" btn-outline-dark" id="darkmode" onClick="dark()"><i class="fas fa-moon"></i></button>
+         <button type="button" class="btn" onClick="changeUserName()" style="margin-top:1rem;color:aliceblue;background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);"><i class="fas fa-user"></i></button> 
+    </div> -->
+    
+    <!-- <a class="gouptopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a> -->
+
+
+    <audio id="myAudio1">
+        <source src="./music/study1.mp3" type="audio/mp3">
+    </audio>
+    <audio id="myAudio2">
+        <source src="./music/study2.mp3" type="audio/mp3">
+    </audio>
+    <audio id="myAudio3">
+        <source src="./music/study3.mp3" type="audio/mp3">
+    </audio>
+    <audio id="myAudio4">
+        <source src="./music/study4.mp3" type="audio/mp3">
+    </audio>
+    <audio id="myAudio5">
+        <source src="./music/study5.mp3" type="audio/mp3">
+    </audio>
+    <audio id="end1">
+        <source src="./music/end1.mp3" type="audio/mp3">
+    </audio>
+    <audio id="end2">
+        <source src="./music/end2.mp3" type="audio/mp3">
+    </audio>
+    <audio id="end3">
+        <source src="./music/end3.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="start1">
+        <source src="./music/start1.mp3" type="audio/mp3">
+    </audio>
+    <audio id="start2">
+        <source src="./music/start2.mp3" type="audio/mp3">
+    </audio>
+    <audio id="start3">
+        <source src="./music/start3.mp3" type="audio/mp3">
+    </audio>
+    <audio id="start4">
+        <source src="./music/start4.mp3" type="audio/mp3">
+    </audio>
+    <!--
+        <div class="egg">
+        <h6 style="color:#e0e9ef;">들켰다!! 이스터에그!! [h]</h6>
+    </div>
+    -->
+    <script src="./js/clocktimer.js"></script>
+  
+    <!-- <script src="./js/welcome.js"></script> -->
+    
+    <script src="./js/happyNewYear.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/animateText.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/clocktimer.js"></script>
+    <script type="text/javascript" src="./js/darkmode.js"></script>
+    <script type="text/javascript" src="./js/music.js"></script>
+    <script src="./js/quote.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+      var y = Math.floor(Math.random() * 4 + 1);
+var x = document.getElementById(`start${y}`);
+
+function playMusicAuto() {
+  x.play();
+}
+
+const exit_animate = document.getElementById("exit_animate");
+exit_animate.addEventListener("click", () => {
+  const animateContainer = document.getElementById("animateText");
+  animateContainer.classList.add("hidden");
+
+  x.pause();
+});
+playMusicAuto();
+    </script>
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="text/javascript">
+        if (!wcs_add) var wcs_add = {};
+        wcs_add["wa"] = "6e0a6669dbe1b8";
+        if (window.wcs) {
+            wcs_do();
+        }
+    </script>
+    <script src="./js/aos.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+</body>
+
+</html>
